@@ -15,17 +15,19 @@
 # 
 #  ▓▓▓▓▓▓▓▓▓▓
 # ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/ryu
-# ░▓ mirror ▓ http://git.io/ryu
+# ░▓ code   ▓ http://git.io/ryu
+# ░▓ mirror ▓ http://code.xero.nu/ryu
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 
 cols=`tput cols`
-if [[ $cols -lt 100 ]]; then
-	echo "term size must be greater than 100px wide!"
-	echo "call 'ryu --help' for more info"
-	exit
-fi
+checksize () {
+	if [[ $cols -lt 100 ]]; then
+		echo "term size must be greater than 100px wide!"
+		echo "call 'ryu --help' for more info"
+		exit
+	fi
+}
 pad () {
 	count=$1
 	until [[ $count -eq 1 ]]; do
@@ -40,6 +42,7 @@ let half=($cols-100)/2
 half=${half/.*}
 
 if [[ -z $1 || $1 == "--grey" || $1 == "-g" || $1 == "grey" ]]; then
+	checksize
 	pad $half; echo -en "..░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        ."; pad $half true
 	pad $half; echo -en ".░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        ."; pad $half true
 	pad $half; echo -en ".░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        ."; pad $half true
@@ -91,6 +94,7 @@ if [[ -z $1 || $1 == "--grey" || $1 == "-g" || $1 == "grey" ]]; then
 	pad $half; echo -en "......░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░▒░▒▒▒▒▒▒  ▒░░░░░░░▒▒▒▒▒▒        ▒     ....."; pad $half true
 else
 	if [[ $1 == "--color" || $1 == "-c" || $1 == "color" ]]; then
+		checksize
 		pad $half; echo -en "\e[0;37m..\e[0;36m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\e[0;34m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        \e[0;37m.."; pad $half true
 		pad $half; echo -en "\e[0;37m.\e[0;36m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\e[0;34m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        \e[0;37m.."; pad $half true
 		pad $half; echo -en "\e[0;37m.\e[0;36m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\e[0;34m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        \e[0;37m.."; pad $half true
@@ -141,7 +145,7 @@ else
 		pad $half; echo -en "\e[0;37m......\e[0;36m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\e[0;34m▒▒▒▒\e[0;36m░\e[0;34m▒▒▒▒▒     \e[0;36m░░░░░░░░\e[0;34m▒▒▒▒▒▒        ▒    \e[0;37m......"; pad $half true
 		pad $half; echo -en "\e[0;37m......\e[0;36m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\e[0;34m▒▒▒\e[0;36m░░\e[0;34m▒\e[0;36m░\e[0;34m▒▒▒▒▒▒  ▒\e[0;36m░░░░░░░\e[0;34m▒▒▒▒▒▒        ▒     \e[0;37m......"; pad $half true
 	elif [[ $1 = '--version' || $1 = '-v' || $1 == "version" ]]; then
-		echo "ryu version 1.0.0"
+		echo "ryu version 1.1.0"
 		echo "xero / syntax-samurai <http://git.io/ryu>"
 		echo "        ▟▙"
 		echo "▟▒░░░░░░░▜▙▜████████████████████████████████▛"
