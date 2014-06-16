@@ -20,7 +20,9 @@
 ```
 ##info
 author:  [xero harrison](http://xero.nu)
+
 homepage: [http://git.io/ryu](http://git.io/ryu)
+
 crew: [http://github.com/syntax-samurai](http://github.com/syntax-samurai)
 
 ##files
@@ -30,7 +32,9 @@ crew: [http://github.com/syntax-samurai](http://github.com/syntax-samurai)
 - **README.md** license and info file
 
 ##running
-if it's necessary for your terminal, rename `ryu` to `ryu.sh` and make it executable with `chmod +x ryu`. call `ryu --help` for available options.
+if it's necessary for your terminal, rename `ryu` to `ryu.sh` and make it executable with `chmod +x ryu`. 
+
+call `ryu --help` for available options.
 
 ##login screen
 to use the ansi art for tty login screens copy `ryu.ansi` or `ryu.color.ansi` to `/etc/issue` (this may require sudo permissions). tested only on arch linux.
