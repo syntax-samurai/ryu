@@ -94,3 +94,7 @@ this program is free software, and distributed under the Creative Commons Attrib
 ......░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░▒▒▒▒▒     ░░░░░░░░▒▒▒▒▒▒        ▒    .....
 ......░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░▒░▒▒▒▒▒▒  ▒░░░░░░░▒▒▒▒▒▒        ▒     .....
 ```
+![color](https://gist.github.com/xero/c9ff889c674b129cd200/raw/b15e5804af29c2506d22e579601a6c8baa84561d/preview-color.png)
+
+
+![mono](https://gist.github.com/xero/c9ff889c674b129cd200/raw/c951b740fb9263ed57ef4582aaa3f5f8c82e7daf/preview.png)
