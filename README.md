@@ -94,3 +94,7 @@ this program is free software, and distributed under the Creative Commons Attrib
 ......░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░▒▒▒▒▒     ░░░░░░░░▒▒▒▒▒▒        ▒    .....
 ......░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░▒░▒▒▒▒▒▒  ▒░░░░░░░▒▒▒▒▒▒        ▒     .....
 ```
+
+![color](https://raw.githubusercontent.com/syntax-samurai/ryu/previews/preview-color.png)
+
+![mono](https://raw.githubusercontent.com/syntax-samurai/ryu/previews/preview.png)
