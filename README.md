@@ -18,31 +18,32 @@
 ▜▒░░░░░░░▟▛▟▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▛
         ▜▛
 ```
-##info
-author:  [xero harrison](http://xero.nu)
 
-homepage: [http://git.io/ryu](http://git.io/ryu)
+## info
+author:  [xero harrison](https://xero.nu)
 
-crew: [http://github.com/syntax-samurai](http://github.com/syntax-samurai)
+homepage: [https://git.io/ryu](https://git.io/ryu)
 
-##files
+crew: [https://github.com/syntax-samurai](https://github.com/syntax-samurai)
+
+## files
 - **ryu** bash script for terminals
 - **ryu.ansi** ansi art for /etc/issue
 - **ryu.color.ansi** colorized version
 - **README.md** license and info file
 
-##running
+## running
 if it's necessary for your terminal, rename `ryu` to `ryu.sh` and make it executable with `chmod +x ryu`. 
 
 call `ryu --help` for available options.
 
-##login screen
+## login screen
 to use the ansi art for tty login screens copy `ryu.ansi` or `ryu.color.ansi` to `/etc/issue` (this may require sudo permissions). tested only on arch linux.
 
-##license
+## license
 this program is free software, and distributed under the Creative Commons Attribution-ShareAlike 3.0 Unported License ([CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/))
 
-##preview
+## preview
 ```
 ..░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        .
 .░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                        .
@@ -98,3 +99,9 @@ this program is free software, and distributed under the Creative Commons Attrib
 ![color](https://raw.githubusercontent.com/syntax-samurai/ryu/previews/preview-color.png)
 
 ![mono](https://raw.githubusercontent.com/syntax-samurai/ryu/previews/preview.png)
+
+## license
+
+![kopimi logo](https://gist.githubusercontent.com/xero/cbcd5c38b695004c848b73e5c1c0c779/raw/6b32899b0af238b17383d7a878a69a076139e72d/kopimi-sm.png)
+
+all files and scripts in this repo are released [CC0](https://creativecommons.org/publicdomain/zero/1.0/) / [kopimi](https://kopimi.com)! in the spirit of _freedom of information_, i encourage you to fork, modify, change, share, or do whatever you like with this project! `^c^v`
